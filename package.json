@@ -1,0 +1,21 @@
+{
+  "name": "player",
+  "version": "1.0.0",
+  "description": "Music Player Design",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwind build ./style.css -o ./src/index.css",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url ./"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "tailwindcss": "^1.1.4"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}

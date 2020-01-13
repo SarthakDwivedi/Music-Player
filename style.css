@@ -1,0 +1,77 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+#root{
+  background-image: linear-gradient(to right, #00000094, #4343438a), url('/asset/back.jpg');
+}
+
+.box {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.run {
+  animation: spin 5s linear 0s infinite reverse;
+}
+
+.box div {
+  width: 50px;
+  height: 50px;
+  transform: rotate(45deg);
+  background: black;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.box div div {
+  width: 40px;
+  height: 40px;
+  transform: rotate(45deg);
+  background: black;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box div div div {
+  width: 30px;
+  height: 30px;
+  transform: rotate(45deg);
+  background: black;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box div div div div {
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  background: black;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
